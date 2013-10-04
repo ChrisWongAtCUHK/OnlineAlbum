@@ -1,0 +1,146 @@
+.cell:hover {
+    border: 2px solid red;
+}
+.cell {
+    width:1024px;
+    height:768px;
+    position:relative;
+    background-color:white;
+	border: 2px solid #ffffff;
+}
+.cell #image {
+    z-index:1;
+    top:0em;
+    left:0em;
+    position:absolute;
+}
+.cell #edit {
+    z-index:2;
+    top:0em;
+    right:1em;
+    background-color:green;
+    position:absolute;
+	display: none;
+}
+.cell #deleteX {
+    z-index:3;
+    width:19px;
+    height:19px;
+    top:0em;
+    right:0em;
+	text-align: center;
+    background-color:blue;
+    position:absolute;
+	display: none;
+}
+
+#progressBar {
+	width: 0%;
+	height: 10px;
+	background-color: red;
+}
+
+#backgroundLayer {
+	background-color: #abcabc;
+	width: 100%;
+	height: 100%;
+    top: 0px;
+    left: 0px;
+	position: absolute;
+}
+
+#innerLayer {
+	background-color: green;
+	opacity: 1.0;
+	z-index: 5;
+	width: 100%;
+    top: 0px;
+    left: 0px;
+	position: absolute;
+}
+
+#top_center {
+	background-color: none;
+	cursor: n-resize;
+	height: 0px;
+}
+#top_left {
+	background-color: none;
+	cursor: nw-resize;
+}
+#top_right{
+	background-color: none;
+	cursor: ne-resize;
+}
+#bottom_center {
+	background-color: none;
+	cursor: s-resize;
+}
+#bottom_left {
+	background-color: none;
+	cursor: sw-resize;
+}
+#bottom_right {
+	background-color: none;
+	cursor: se-resize;
+}
+#middle_left {
+	background-color: none;
+	cursor: w-resize;
+}
+#middle_right {
+	background-color: none;
+	cursor: e-resize;
+}
+
+#imgArea {
+	width: 100%;
+	height: 100%;
+}
+
+#draggableTable {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+#imgDiv {
+	background-color: none;
+	opacity: 0.0;
+	z-index: -1;
+    top: 0px;
+    left: 0px;
+	position: absolute;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.top{
+	height: 10px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.bottom{
+	height: 10px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.left{
+	width: 10px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.right{
+	width: 10px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
